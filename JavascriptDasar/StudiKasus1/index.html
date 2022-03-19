@@ -16,21 +16,19 @@
       <div class="form-box">
         <label for="plane">Pilih Maskapai</label>
         <select name="plane" id="plane">
-          <option value="Garuda Indonesia" class="garuda">
-            Garuda Indonesia
-          </option>
-          <option value="Lion" class="lion">Lion Air</option>
-          <option value="Batavia" class="batavia">Batavia Air</option>
+          <option value="Garuda Indonesia" class="garuda">Garuda Indonesia</option>
+          <option value="Lion Air" class="lion">Lion Air</option>
+          <option value="Batavia Air" class="batavia">Batavia Air</option>
         </select>
       </div>
-      <button class="my-btn" type="submit">Cari</button>
+      <button class="my-btn" type="submit" onsubmit="mencariMaskapai()">Cari</button>
     </form>
     <div class="card">
       <h2 class="maskapai-name"></h2>
-      <!-- <p>tanggal penerbangan</p>
-      <p>jumlah tiket tersedia</p>
-      <p>Harga</p>
-      <form action="#">
+      <!-- <p>tanggal penerbangan</p> -->
+      <p>jumlah tiket tersedia : <span class="ticket-avail"></span></p>
+      <!-- <p>Harga</p> -->
+      <!-- <form action="#">
         <label for="count" class="count">Jumlah Pesan</label>
         <input type="number" />
 
